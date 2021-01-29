@@ -9,7 +9,7 @@ class BasicEducation extends Model
 {
     use HasFactory;
 
-
+    protected $table = 'basics_educations';
     protected $fillable = [
         'level',
         'country',
@@ -18,7 +18,8 @@ class BasicEducation extends Model
         'start_year',
         'end_year',
         'results_system',
-        'results_grade'
+        'results_grade',
+        'status'
     ];
 
 }

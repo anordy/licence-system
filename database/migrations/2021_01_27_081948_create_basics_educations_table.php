@@ -23,6 +23,7 @@ class CreateBasicsEducationsTable extends Migration
             $table->integer('end_year');
             $table->String('results_system');
             $table->String('results_grade');
+            $table->String('status');
             $table->timestamps();
         });
     }

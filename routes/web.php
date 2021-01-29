@@ -28,7 +28,15 @@ Route::get('/', [App\Http\Controllers\HomeAppController::class, 'index'])->name(
 
 Route::get('/application', [App\Http\Controllers\ApplicationController::class, 'index'])->name('application.index');
 Route::get('/apply', [App\Http\Controllers\ApplyController::class, 'index'])->name('apply.index');
+
+// basic education
 Route::get('/basic', [App\Http\Controllers\BasicEducationController::class, 'index'])->name('basic.index');
+Route::get('/postBasic', [App\Http\Controllers\BasicEducationController::class, 'postBasic'])->name('basic.postBasic');
+Route::get('/getBasic', [App\Http\Controllers\BasicEducationController::class, 'getBasic'])->name('basic.getBasic');
+
+
+
+
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact.index');
 Route::get('/declaration', [App\Http\Controllers\DeclarationController::class, 'index'])->name('declaration.index');
 Route::get('/documents', [App\Http\Controllers\DocumentsController::class, 'index'])->name('documents.index');
